@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E10E4E3F2DCF7A7800748C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4E3E2DCF7A7800748C43 /* AppDelegate.swift */; };
 		E10E4E412DCF7A7800748C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4E402DCF7A7800748C43 /* SceneDelegate.swift */; };
 		E10E4E432DCF7A7800748C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E4E422DCF7A7800748C43 /* ViewController.swift */; };
-		E10E4E462DCF7A7800748C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10E4E442DCF7A7800748C43 /* Main.storyboard */; };
 		E10E4E492DCF7A7800748C43 /* SportsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E10E4E472DCF7A7800748C43 /* SportsApp.xcdatamodeld */; };
 		E10E4E4B2DCF7A7A00748C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10E4E4A2DCF7A7A00748C43 /* Assets.xcassets */; };
 		E10E4E4E2DCF7A7A00748C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10E4E4C2DCF7A7A00748C43 /* LaunchScreen.storyboard */; };
@@ -44,7 +43,6 @@
 		E10E4E3E2DCF7A7800748C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10E4E402DCF7A7800748C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E10E4E422DCF7A7800748C43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E10E4E452DCF7A7800748C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E10E4E482DCF7A7800748C43 /* SportsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsApp.xcdatamodel; sourceTree = "<group>"; };
 		E10E4E4A2DCF7A7A00748C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10E4E4D2DCF7A7A00748C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +55,10 @@
 		E1C8D06E2DCFBFC70015391A /* lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
 		E1C8D0702DCFC0170015391A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		45A927FC2DCFEDD400779D6E /* main_screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = main_screen; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E10E4E382DCF7A7800748C43 /* Frameworks */ = {
@@ -107,11 +109,11 @@
 		E10E4E3D2DCF7A7800748C43 /* SportsApp */ = {
 			isa = PBXGroup;
 			children = (
+				45A927FC2DCFEDD400779D6E /* main_screen */,
 				E1C8D06E2DCFBFC70015391A /* lottie.json */,
 				E10E4E3E2DCF7A7800748C43 /* AppDelegate.swift */,
 				E10E4E402DCF7A7800748C43 /* SceneDelegate.swift */,
 				E10E4E422DCF7A7800748C43 /* ViewController.swift */,
-				E10E4E442DCF7A7800748C43 /* Main.storyboard */,
 				E10E4E4A2DCF7A7A00748C43 /* Assets.xcassets */,
 				E10E4E4C2DCF7A7A00748C43 /* LaunchScreen.storyboard */,
 				E10E4E4F2DCF7A7A00748C43 /* Info.plist */,
@@ -152,6 +154,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				45A927FC2DCFEDD400779D6E /* main_screen */,
 			);
 			name = SportsApp;
 			packageProductDependencies = (
@@ -251,7 +256,6 @@
 				E1C8D06F2DCFBFC80015391A /* lottie.json in Resources */,
 				E10E4E4E2DCF7A7A00748C43 /* LaunchScreen.storyboard in Resources */,
 				E10E4E4B2DCF7A7A00748C43 /* Assets.xcassets in Resources */,
-				E10E4E462DCF7A7800748C43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E10E4E442DCF7A7800748C43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E10E4E452DCF7A7800748C43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E10E4E4C2DCF7A7A00748C43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
