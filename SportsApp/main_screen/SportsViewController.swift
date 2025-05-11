@@ -10,19 +10,13 @@ import UIKit
 class SportsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var sportsTableView: UITableView!
-    private var sports: [String] = [
-        "Football",
-        "Cricket",
-        "Tennis",
-        "Basketball"
+    private var sportsData: [Sport] = [
+        Sport(id: 0, imagePath: "football_card_image", title: "Football"),
+        Sport(id: 1, imagePath: "cricket_card_image", title: "Cricket"),
+        Sport(id: 2, imagePath: "tennis_card_image", title: "Tennis"),
+        Sport(id: 3, imagePath: "basketball_card_image", title: "Basketball")
     ]
     
-    private var sportsImages: [String] = [
-        "football_card_image",
-        "cricket_card_image",
-        "tennis_card_image",
-        "basketball_card_image"
-    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,14 +35,14 @@ class SportsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        sports.count
+        sportsData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SportsCellTableViewCell
         
-        cell.sportImage?.image = UIImage(named: sportsImages[indexPath.row])
-        cell.sportTitle?.text = sports[indexPath.row]
+        cell.sportImage?.image = UIImage(named: sportsData[indexPath.row].imagePath)
+        cell.sportTitle?.text = sportsData[indexPath.row].title
         
         //make image and title rounded
         cell.sportImage.layer.cornerRadius = 12
@@ -61,7 +55,7 @@ class SportsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(sports[indexPath.row])
+        print(sportsData[indexPath.row].title)
     }
 
 }
